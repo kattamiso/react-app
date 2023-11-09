@@ -1,4 +1,3 @@
-/* Reset some default styles */
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Main container for your cards */
 .App {
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +13,6 @@ body {
   padding: 20px;
 }
 
-/* Individual card style */
 .card {
   background-color: #fff;
   border: 1px solid #e0e0e0;
@@ -28,26 +25,22 @@ body {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Add hover effect for cards */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Card title style */
 .card h1 {
   font-size: 1.5rem;
   margin: 10px 0;
   color: #333;
 }
 
-/* Card body text style */
 .body {
   font-size: 1rem;
   color: #666;
 }
 
-/* Navigation bar style */
 nav {
   background-color: #333;
   color: #fff;
@@ -55,7 +48,6 @@ nav {
   text-align: center;
 }
 
-/* Navigation links style */
 nav a {
   color: #fff;
   text-decoration: none;
