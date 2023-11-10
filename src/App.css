@@ -17,17 +17,19 @@ body {
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
+  border-color: #7774bd;
   padding: 20px;
   text-align: center;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #0000001a;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 12px #7774bd;
+  background-color: #e6e6f0;
 }
 
 .card h1 {
@@ -42,7 +44,7 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color: #7774bd;
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -52,10 +54,4 @@ nav a {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
-  transition: text-decoration 0.3s ease-in-out;
-}
-
-/* Hover effect on navigation links */
-nav a:hover {
-  text-decoration: underline;
 }
