@@ -1,0 +1,31 @@
+.styled-table {
+  margin: 20px;
+}
+
+.styled-table table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  flex: 1;
+}
+
+.styled-table th {
+  background-color: #7774bd;
+}
+
+.styled-table td {
+  background-color: #fff;
+}
+
+.styled-table td:hover {
+  background-color: #7774bd;
+}
