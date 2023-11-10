@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import {Link ,useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Axios from "axios";
+import "./cardDetail.css";
 
 export function CardDetail() {
   const { id } = useParams();
@@ -21,15 +22,24 @@ export function CardDetail() {
     <div>
       {data ? (
         <div>
-          <h1>Object ID: {data.id}</h1>
-          <h2>Title: {data.title}</h2>
-          <p>UserID: {data.userId}</p>
-          <p>Body: {data.body}</p>
+          <table className="styled-table">
+            <tr>
+              <th>Object ID </th>
+              <td>{data.id}</td>
+            </tr>
+            <tr>
+              <th>Title </th>
+              <td>{data.title}</td>
+            </tr>
+            <tr>
+              <th>Body </th>
+              <td>{data.body}</td>
+            </tr>
+          </table>
         </div>
       ) : (
         <p>Loading...</p>
       )}
-      <Link to="/appNew">Back to cards</Link>
     </div>
   );
 }
